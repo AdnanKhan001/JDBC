@@ -30,10 +30,17 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>com.jdbc.main.java.JdbcConnection</mainClass>
+              <mainClass>JdbcConnection</mainClass>
             </manifest>
           </archive>
         </configuration>
+      </plugin>
+      <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>exec-maven-plugin</artifactId>
+      <version>1.2.1</version>
+      <configuration>
+      <mainClass>JdbcConnection</mainClass> </configuration>
       </plugin>
     </plugins>
   </build>
